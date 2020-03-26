@@ -1,0 +1,21 @@
+1. We have declared and initialized an array called candies, where we store the grams of sugar each canndy on the array has.
+2. The we have declared and initialized a variable with a certain value, called threshold.
+3. The we call our function sugarHigh(candies, threshold), where the array and the variable we have created earlier are parameters.
+4. We console.log the inital array and the threshold.
+4. In this function we declare a dictionary (array).
+5. With a for loop we go through all elements in the candies array and we put them in the dictionary. 
+6. The dictionary is an Object with key and value fields for each element in the dictionary. It is a Key/Value pair collection.
+    In the key field we store the index of the element and in the value field we store the value of the element (in this case, the value is 
+    each element of the candies array).
+7. Then we sort the candies array in ascending order with built-in function (we use lambda expression to tell how we want to sort our array, otherwise
+    the function sorts the numbers by alphabetic order.)
+8. We declare an array called indices, where we will store the indexes of each candy that we will eat.
+9. We declare a variable called sumOfSugar, where we will heap the grams of sugar we will eat.
+10. Using a for loop we go through all candies elements, and we check if the ammount of sugar we have eaten so far + the ammount
+     of sugar the next candy has is less than the threshold. If it is less, we can eat it. Then we can put the index of this candies from the original
+     array in the indices array. We use simple Object.keys() method to access all dictionary elements, and then the find() method.
+     This find method takes a simpe lambda expression. If the ammount of sugar is more than the threshold, then we continue with the next element,
+    until the end of the array.
+11. Next, using a for loop we check if there are equal candies (having equal amount of sugar), and if so, we increase the index of the second one
+    with one, otherwise we will get two equal indexes at the end.
+12. Finaly, we return the sorted indices array 
